@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بث مباشر احترافي</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include HLS.js library for playing m3u8 streams -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>منصة البث التلفزيوني</h1>
+        <p>شاهد قنواتك المفضلة مباشرة</p>
+    </header>
+
+    <div class="site-container">
+        <aside class="channel-sidebar">
+            <h2><i class="icon-list"></i> قائمة القنوات</h2>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="ابحث عن قناة...">
+            </div>
+            <ul id="channel-list-dynamic">
+                <!-- Channel list will be loaded here by JavaScript -->
+                <li class="loading-placeholder">جاري تحميل القنوات...</li>
+            </ul>
+        </aside>
+
+        <main class="video-main-content">
+            <div id="video-player-container">
+                <video id="video-player" controls poster="placeholder.png"></video>
+                <div id="player-overlay" class="player-overlay">
+                     <div id="current-channel-info">
+                        <img id="current-channel-logo" src="" alt="Channel Logo" style="display: none;"/>
+                        <h2 id="current-channel-name">اختر قناة من القائمة للبدء</h2>
+                    </div>
+                    <p class="player-instructions">انقر على قناة من القائمة الجانبية لبدء البث.</p>
+                     <p class="player-notice">(ملاحظة: جودة البث تعتمد على المصدر. قد لا تعمل بعض القنوات.)</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 منصة البث التلفزيوني | تم جلبه بواسطة Manus</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
