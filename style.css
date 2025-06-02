@@ -67,11 +67,7 @@ body {
     width: 1em;
     height: 1em;
     background-color: #1a2980; /* Example */
-    margin-left: 0.5rem;
-    -webkit-mask: url('list-icon.svg') no-repeat center; /* Add an SVG icon */
-    mask: url('list-icon.svg') no-repeat center;
-}
-
+    margin-left: 0.5rem
 /* --- Search Bar --- */
 .search-bar {
     margin-bottom: 1rem;
